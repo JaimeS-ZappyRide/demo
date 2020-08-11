@@ -1,14 +1,127 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
+  "ClientServices": [
+    {
+      "ServiceType": "EVShopper",
+      "ServiceID": "zxcxzczkjjdffsdlkjkhnb",
+      "Client": {
+        "ClientID": "21223",
+        "ClientName": "abc"
+      },
+      "Properties": [
+        {
+          "type*": "website",
+          "action*": "Create Staging Website",
+          "status*": "complete",
+          "environment*": "staging",
+          "url": "someclient.prod.d.zappyride.com",
+          "s3BucketID": "aws.arnr.asd",
+          "cloudfrontID": "CfID",
+          "mangedSubDomain": true,
+          "mangedSubDomainId": "adssdaasd",
+          "mangedSubDomainDNS": [
+            "adssdaasd.aws.amzn.com",
+            "adssdaasd.aws.amzn.com",
+            "adssdaasd.aws.amzn.com"
+          ],
+          "sslCertId": "\"arn.asdd.asda.asd\""
+        },
+        {
+          "type*": "website",
+          "action*": "Create Production Website",
+          "status*": "pending",
+          "enviornment": "prodution",
+          "url": "ev.someClient.com",
+          "cloudfrontID": "CfID",
+          "mangedSubDomain": true,
+          "mangedSubDomainId": null,
+          "mangedSubDomainDNS": [
+            
+          ],
+          "sslCertId": null
+        }
+      ]
+    },
+{
+  "ClientServices": {
+    "ServiceType": "EVShopper",
+    "ServiceID": "zxcxzczkjjdffsdlkjkhnb",
+    "Client": {
+      "ClientID": "21223",
+      "ClientName": "abc"
+    },
+    "Properties": [
+          {
+            "type*": "website",
+            "action*": "Create Staging Website",
+            "status*": "complete",
+            "environment*": "staging",
+            "url": "someclient.prod.d.zappyride.com",
+            "s3BucketID": "aws.arnr.asd",
+            "cloudfrontID": "CfID",
+            "mangedSubDomain": true,
+            "mangedSubDomainId": "adssdaasd",
+            "mangedSubDomainDNS":[ 
+                "adssdaasd.aws.amzn.com", 
+                "adssdaasd.aws.amzn.com", 
+                "adssdaasd.aws.amzn.com"
+             ],
+            "sslCertId": "\"arn.asdd.asda.asd\""
+          },
+          {
+            "type*": "website",
+            "action*": "Create Production Website",
+            "status*": "pending",
+            "enviornment": "prodution",
+            "url": "ev.someClient.com",
+            "cloudfrontID": "CfID",
+            "mangedSubDomain": true,
+            "mangedSubDomainId": null,
+            "mangedSubDomainDNS":[],             
+            "sslCertId": null
+          }
+    ]
   }
+},
+{
+  "ClientServices": {
+    "ServiceType": "EVShopper",
+    "ServiceID": "zxcxzczkjjdffsdlkjkhnb",
+    "Client": {
+      "ClientID": "21223",
+      "ClientName": "abc"
+    },
+    "Properties": [
+          {
+            "type*": "website",
+            "action*": "Create Staging Website",
+            "status*": "complete",
+            "environment*": "staging",
+            "url": "someclient.prod.d.zappyride.com",
+            "s3BucketID": "aws.arnr.asd",
+            "cloudfrontID": "CfID",
+            "mangedSubDomain": true,
+            "mangedSubDomainId": "adssdaasd",
+            "mangedSubDomainDNS":[ 
+                "adssdaasd.aws.amzn.com", 
+                "adssdaasd.aws.amzn.com", 
+                "adssdaasd.aws.amzn.com"
+             ],
+            "sslCertId": "\"arn.asdd.asda.asd\""
+          },
+          {
+            "type*": "website",
+            "action*": "Create Production Website",
+            "status*": "pending",
+            "enviornment": "prodution",
+            "url": "ev.someClient.com",
+            "cloudfrontID": "CfID",
+            "mangedSubDomain": true,
+            "mangedSubDomainId": null,
+            "mangedSubDomainDNS":[],             
+            "sslCertId": null
+          }
+    ]
+  }
+}
+  ]
 }
