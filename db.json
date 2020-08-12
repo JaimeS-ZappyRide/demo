@@ -1,128 +1,164 @@
 {
-  "Post" :[],
-  "ClientServices": [
-    {
-      "ServiceType": "EVShopper",
-      "ServiceID": "zxcxzczkjjdffsdlkjkhnb",
-      "Client": {
-        "ClientID": "21223",
-        "ClientName": "abc"
-      },
-      "Properties": [
-        {
-          "type*": "website",
-          "action*": "Create Staging Website",
-          "status*": "complete",
-          "environment*": "staging",
-          "url": "someclient.prod.d.zappyride.com",
-          "s3BucketID": "aws.arnr.asd",
-          "cloudfrontID": "CfID",
-          "mangedSubDomain": true,
-          "mangedSubDomainId": "adssdaasd",
-          "mangedSubDomainDNS": [
-            "adssdaasd.aws.amzn.com",
-            "adssdaasd.aws.amzn.com",
-            "adssdaasd.aws.amzn.com"
-          ],
-          "sslCertId": "\"arn.asdd.asda.asd\""
-        },
-        {
-          "type*": "website",
-          "action*": "Create Production Website",
-          "status*": "pending",
-          "enviornment": "prodution",
-          "url": "ev.someClient.com",
-          "cloudfrontID": "CfID",
-          "mangedSubDomain": true,
-          "mangedSubDomainId": null,
-          "mangedSubDomainDNS": [
-            
-          ],
-          "sslCertId": null
-        }
-      ]
-    },
-{
-  "ClientServices": {
-    "ServiceType": "EVShopper",
-    "ServiceID": "zxcxzczkjjdffsdlkjkhnb",
-    "Client": {
-      "ClientID": "21223",
-      "ClientName": "abc"
-    },
-    "Properties": [
-          {
-            "type*": "website",
-            "action*": "Create Staging Website",
-            "status*": "complete",
-            "environment*": "staging",
-            "url": "someclient.prod.d.zappyride.com",
-            "s3BucketID": "aws.arnr.asd",
-            "cloudfrontID": "CfID",
-            "mangedSubDomain": true,
-            "mangedSubDomainId": "adssdaasd",
-            "mangedSubDomainDNS":[ 
-                "adssdaasd.aws.amzn.com", 
-                "adssdaasd.aws.amzn.com", 
-                "adssdaasd.aws.amzn.com"
-             ],
-            "sslCertId": "\"arn.asdd.asda.asd\""
-          },
-          {
-            "type*": "website",
-            "action*": "Create Production Website",
-            "status*": "pending",
-            "enviornment": "prodution",
-            "url": "ev.someClient.com",
-            "cloudfrontID": "CfID",
-            "mangedSubDomain": true,
-            "mangedSubDomainId": null,
-            "mangedSubDomainDNS":[],             
-            "sslCertId": null
-          }
-    ]
-  }
-},
-{
-  "ClientServices": {
-    "ServiceType": "EVShopper",
-    "ServiceID": "zxcxzczkjjdffsdlkjkhnb",
-    "Client": {
-      "ClientID": "21223",
-      "ClientName": "abc"
-    },
-    "Properties": [
-          {
-            "type*": "website",
-            "action*": "Create Staging Website",
-            "status*": "complete",
-            "environment*": "staging",
-            "url": "someclient.prod.d.zappyride.com",
-            "s3BucketID": "aws.arnr.asd",
-            "cloudfrontID": "CfID",
-            "mangedSubDomain": true,
-            "mangedSubDomainId": "adssdaasd",
-            "mangedSubDomainDNS":[ 
-                "adssdaasd.aws.amzn.com", 
-                "adssdaasd.aws.amzn.com", 
-                "adssdaasd.aws.amzn.com"
-             ],
-            "sslCertId": "\"arn.asdd.asda.asd\""
-          },
-          {
-            "type*": "website",
-            "action*": "Create Production Website",
-            "status*": "pending",
-            "enviornment": "prodution",
-            "url": "ev.someClient.com",
-            "cloudfrontID": "CfID",
-            "mangedSubDomain": true,
-            "mangedSubDomainId": null,
-            "mangedSubDomainDNS":[],             
-            "sslCertId": null
-          }
-    ]
-  }
-}
-  ]
+	"clientServices": [{
+
+
+			"id": "6b9ef338-5a9d-4d85-aeea-c754a84f4842",
+			"service": "EvShopper",
+
+			"Client": {
+
+				"ClientID": "21223",
+				"ClientName": "abc"
+			},
+			"Properties": [{
+					"type*": "website",
+					"currentTask*": "Create Client S3 Bucket",
+
+					"taskFlow": [
+						"Create Client S3 Bucket",
+						"Create Client CloudFront",
+						"Create Client Next Step",
+						"Create Client Next Step 2",
+						"Create Client Next Step 4"
+					],
+					"status*": "complete",
+					"environment*": "staging",
+
+					"BearerToken": "6b9ef338-5a9d-4d85-aeea-c754a84f4842",
+					"url": "someclient.prod.d.zappyride.com",
+					"s3BucketID": "aws.arnr.asd",
+					"cloudfrontID": "CfID",
+					"mangedSubDomain": true,
+					"mangedSubDomainId": "adssdaasd",
+					"mangedSubDomainDNS": [
+						"adssdaasd.aws.amzn.com",
+						"adssdaasd.aws.amzn.com",
+						"adssdaasd.aws.amzn.com"
+					],
+					"sslCertId": "\"arn.asdd.asda.asd\""
+				},
+				{
+					"type*": "website",
+					"action*": "Create Production Website",
+					"status*": "pending",
+					"enviornment": "prodution",
+
+					"BearerToken": "6b9ef338-5a9d-4d85-aeea-c754a84f4842",
+					"url": "ev.someClient.com",
+					"cloudfrontID": "CfID",
+					"mangedSubDomain": true,
+					"mangedSubDomainId": null,
+					"mangedSubDomainDNS": [],
+					"sslCertId": null
+				}
+			]
+		},
+		{
+
+			"id": "b25c9814-adea-4b92-94b4-82bcf4556eb5",
+
+			"service": "EvShopper",
+
+			"Client": {
+
+				"ClientID": "21223",
+				"ClientName": "abc"
+			},
+			"Properties": [{
+					"type*": "website",
+					"currentTask*": "Create Client S3 Bucket",
+
+					"taskFlow": [
+						"Create Client S3 Bucket",
+						"Create Client CloudFront",
+						"Create Client Next Step",
+						"Create Client Next Step 2",
+						"Create Client Next Step 4"
+					],
+					"status*": "complete",
+					"environment*": "staging",
+
+					"BearerToken": "b25c9814-adea-4b92-94b4-82bcf4556eb5",
+					"url": "someclient.prod.d.zappyride.com",
+					"s3BucketID": "aws.arnr.asd",
+					"cloudfrontID": "CfID",
+					"mangedSubDomain": true,
+					"mangedSubDomainId": "adssdaasd",
+					"mangedSubDomainDNS": [
+						"adssdaasd.aws.amzn.com",
+						"adssdaasd.aws.amzn.com",
+						"adssdaasd.aws.amzn.com"
+					],
+					"sslCertId": "\"arn.asdd.asda.asd\""
+				},
+				{
+					"type*": "website",
+					"action*": "Create Production Website",
+					"status*": "pending",
+					"enviornment": "prodution",
+
+					"BearerToken": "b25c9814-adea-4b92-94b4-82bcf4556eb5",
+					"url": "ev.someClient.com",
+					"cloudfrontID": "CfID",
+					"mangedSubDomain": true,
+					"mangedSubDomainId": null,
+					"mangedSubDomainDNS": [],
+					"sslCertId": null
+				}
+			]
+		},
+		{
+
+			"id": "c60c72a9-f275-4e55-97f5-635a1060a67e",
+			"service": "EvShopper",
+
+			"Client": {
+
+				"ClientID": "21223",
+				"ClientName": "abc"
+			},
+			"Properties": [{
+					"type*": "website",
+					"currentTask*": "Create Client S3 Bucket",
+
+					"taskFlow": [
+						"Create Client S3 Bucket",
+						"Create Client CloudFront",
+						"Create Client Next Step",
+						"Create Client Next Step 2",
+						"Create Client Next Step 4"
+					],
+					"status*": "complete",
+					"environment*": "staging",
+
+					"BearerToken": "c60c72a9-f275-4e55-97f5-635a1060a67e",
+					"url": "someclient.prod.d.zappyride.com",
+					"s3BucketID": "aws.arnr.asd",
+					"cloudfrontID": "CfID",
+					"mangedSubDomain": true,
+					"mangedSubDomainId": "adssdaasd",
+					"mangedSubDomainDNS": [
+						"adssdaasd.aws.amzn.com",
+						"adssdaasd.aws.amzn.com",
+						"adssdaasd.aws.amzn.com"
+					],
+					"sslCertId": "\"arn.asdd.asda.asd\""
+				},
+				{
+					"type*": "website",
+					"action*": "Create Production Website",
+					"status*": "pending",
+					"enviornment": "prodution",
+
+					"BearerToken": "c60c72a9-f275-4e55-97f5-635a1060a67e",
+					"url": "ev.someClient.com",
+					"cloudfrontID": "CfID",
+					"mangedSubDomain": true,
+					"mangedSubDomainId": null,
+					"mangedSubDomainDNS": [],
+					"sslCertId": null
+				}
+			]
+		}
+	]
 }
