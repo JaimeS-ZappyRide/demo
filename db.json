@@ -41,7 +41,7 @@
 					"type*": "website",
 					"action*": "Create Production Website",
 					"status*": "pending",
-					"envirrnment": "prodution",
+					"environment": "production",
 
 					"BearerToken": "6b9ef338-5a9d-4d85-aeea-c754a84f4842",
 					"url": "ev.someClient.com",
@@ -95,7 +95,7 @@
 					"type*": "website",
 					"action*": "Create Production Website",
 					"status*": "pending",
-					"envirrnment": "prodution",
+					"environment": "production",
 
 					"BearerToken": "b25c9814-adea-4b92-94b4-82bcf4556eb5",
 					"url": "ev.someClient.com",
@@ -148,7 +148,7 @@
 					"type*": "website",
 					"action*": "Create Production Website",
 					"status*": "pending",
-					"envirrnment": "prodution",
+					"environment": "production",
 
 					"BearerToken": "c60c72a9-f275-4e55-97f5-635a1060a67e",
 					"url": "ev.someClient.com",
