@@ -39,13 +39,21 @@
 				},
 				{
 					"type*": "website",
-					"action*": "Create Production Website",
+					"nextTask*": "Create Client S3 Bucket",
+
+					"taskFlow": [
+						"Create Client S3 Bucket",
+						"Create Client CloudFront",
+						"Create Client Next Step",
+						"Create Client Next Step 2",
+						"Create Client Next Step 4"
+					],
 					"status*": "pending",
 					"environment*": "production",
 
 					"BearerToken": "6b9ef338-5a9d-4d85-aeea-c754a84f4842",
 					"url": "ev.someClient.com",
-					"cloudfrontID": "CfID",
+					"cloudfrontID": null,
 					"mangedSubDomain": true,
 					"mangedSubDomainId": null,
 					"mangedSubDomainDNS": [],
@@ -66,7 +74,7 @@
 			},
 			"Properties": [{
 					"type*": "website",
-					"currentTask*": "Create Client S3 Bucket",
+					"nextTask*": "Create Client S3 Bucket",
 
 					"taskFlow": [
 						"Create Client S3 Bucket",
@@ -92,17 +100,27 @@
 					"sslCertId": "\"arn.asdd.asda.asd\""
 				},
 				{
-					"type*": "website",
-					"action*": "Create Production Website",
-					"status*": "pending",
+					"nextTask*":null,
+				 	"type*": "website",
+ 					"status*": "complete",
 					"environment*": "production",
-
+					"taskFlow": [
+						"Create Client S3 Bucket",
+						"Create Client CloudFront",
+						"Create Client Next Step",
+						"Create Client Next Step 2",
+						"Create Client Next Step 4"
+					],
 					"BearerToken": "b25c9814-adea-4b92-94b4-82bcf4556eb5",
 					"url": "ev.someClient.com",
 					"cloudfrontID": "CfID",
-					"mangedSubDomain": true,
-					"mangedSubDomainId": null,
-					"mangedSubDomainDNS": [],
+					"managedSubDomain": true,
+					"managedSubDomainId": "1234sdasad,
+					"managedSubDomainDNS": [
+						"adssdaasd.aws.amzn.com",
+						"adssdaasd.aws.amzn.com",
+						"adssdaasd.aws.amzn.com"
+					],
 					"sslCertId": null
 				}
 			]
@@ -119,7 +137,7 @@
 			},
 			"Properties": [{
 					"type*": "website",
-					"currentTask*": "Create Client S3 Bucket",
+					"nextTask*": "Create Client S3 Bucket",
 
 					"taskFlow": [
 						"Create Client S3 Bucket",
@@ -135,6 +153,33 @@
 					"url": "someclient.prod.d.zappyride.com",
 					"s3BucketID": "aws.arnr.asd",
 					"cloudfrontID": "CfID",
+					"managedSubDomain": true,
+					"managedSubDomainId": "adssdaasd",
+					"managedSubDomainDNS": [
+						"adssdaasd.aws.amzn.com",
+						"adssdaasd.aws.amzn.com",
+						"adssdaasd.aws.amzn.com"
+					],
+					"sslCertId": "\"arn.asdd.asda.asd\""
+				},
+				{
+				 	"nextTask*": "Create Client S3 Bucket",
+
+					"taskFlow": [
+						"Create Client S3 Bucket",
+						"Create Client CloudFront",
+						"Create Client Next Step",
+						"Create Client Next Step 2",
+						"Create Client Next Step 4"
+					],
+					"status*": "complete",
+					"type*": "website",
+					"status*": "pending",
+					"environment*": "production",
+
+					"BearerToken": "c60c72a9-f275-4e55-97f5-635a1060a67e",
+					"url": "ev.someClient.com",
+					"cloudfrontID": "CfID",
 					"mangedSubDomain": true,
 					"mangedSubDomainId": "adssdaasd",
 					"mangedSubDomainDNS": [
@@ -143,20 +188,6 @@
 						"adssdaasd.aws.amzn.com"
 					],
 					"sslCertId": "\"arn.asdd.asda.asd\""
-				},
-				{
-					"type*": "website",
-					"action*": "Create Production Website",
-					"status*": "pending",
-					"environment*": "production",
-
-					"BearerToken": "c60c72a9-f275-4e55-97f5-635a1060a67e",
-					"url": "ev.someClient.com",
-					"cloudfrontID": "CfID",
-					"mangedSubDomain": true,
-					"mangedSubDomainId": null,
-					"mangedSubDomainDNS": [],
-					"sslCertId": null
 				}
 			]
 		}
