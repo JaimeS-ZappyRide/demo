@@ -100,9 +100,9 @@
 					"sslCertId": "\"arn.asdd.asda.asd\""
 				},
 				{
-					"nextTask*":null,
-				 	"type*": "website",
- 					"status*": "complete",
+					"nextTask*": null,
+					"type*": "website",
+					"status*": "complete",
 					"environment*": "production",
 					"taskFlow": [
 						"Create Client S3 Bucket",
@@ -115,7 +115,7 @@
 					"url": "ev.someClient.com",
 					"cloudfrontID": "CfID",
 					"managedSubDomain": true,
-					"managedSubDomainId": "1234sdasad,
+					"managedSubDomainId": "1234sdasad",
 					"managedSubDomainDNS": [
 						"adssdaasd.aws.amzn.com",
 						"adssdaasd.aws.amzn.com",
@@ -163,7 +163,7 @@
 					"sslCertId": "\"arn.asdd.asda.asd\""
 				},
 				{
-				 	"nextTask*": "Create Client S3 Bucket",
+					"nextTask*": "Create Client S3 Bucket",
 
 					"taskFlow": [
 						"Create Client S3 Bucket",
@@ -172,7 +172,6 @@
 						"Create Client Next Step 2",
 						"Create Client Next Step 4"
 					],
-					"status*": "complete",
 					"type*": "website",
 					"status*": "pending",
 					"environment*": "production",
